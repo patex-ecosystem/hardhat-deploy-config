@@ -1,0 +1,73 @@
+{
+  "name": "@eth-patex/hardhat-deploy-config",
+  "version": "0.2.6",
+  "description": "[Patex] Hardhat deploy configuration plugin",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "test:coverage": "echo 'No tests defined.'",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist/ ./tsconfig.tsbuildinfo",
+    "lint": "yarn lint:fix && yarn lint:check",
+    "pre-commit": "lint-staged",
+    "lint:fix": "yarn lint:check --fix",
+    "lint:check": "eslint . --max-warnings=0"
+  },
+  "keywords": [
+    "patex",
+    "ethereum",
+    "hardhat",
+    "deploy",
+    "config",
+    "plugin"
+  ],
+  "homepage": "https://github.com/patex-ecosystem/hardhat-deploy-config#readme",
+  "license": "MIT",
+  "author": "Patex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patex-ecosystem/hardhat-deploy-config.git"
+  },
+  "devDependencies": {
+    "ethers": "^5.7.0",
+    "ts-node": "^10.9.1",
+    "hardhat": "^2.9.6",
+    "@babel/eslint-parser": "^7.18.2",
+    "@types/chai": "^4.2.18",
+    "@types/chai-as-promised": "^7.1.4",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^12.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "chai": "^4.2.0",
+    "copyfiles": "^2.3.0",
+    "depcheck": "^1.4.3",
+    "doctoc": "^2.2.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^35.1.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "11.0.0",
+    "markdownlint": "^0.24.0",
+    "markdownlint-cli2": "0.4.0",
+    "mkdirp": "^1.0.4",
+    "nyc": "^15.1.0",
+    "patch-package": "^6.4.7",
+    "prettier": "^2.8.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.9.3",
+    "mocha": "^10.0.0"
+  }
+}
